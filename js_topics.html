@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Topics</title>
+</head>
+<body>
+    <h1 style="text-align: center;">TOPICS</h1>
+
+    <h3 id="heading3">javaScript is a syncrones and single threaded programming language</h3>
+    <p>2:50:20/3:25:10 > webDesigning</p>
+
+    <dl>
+        <dt>pexels.com(walpapers)</dt>
+            <dd>to download walpapers.</dd>
+        <dt>Eye Dropper (extension for chrome)</dt>
+            <dd>This is a color picker.</dd>
+
+        <h3>DOM (Document Object Model)</h3>
+        <dt>script:src</dt>
+            <dd>to generate script source link.</dd>
+        <dt>&lt;script src="./02.js" defer&gt;</script></dt>
+            <dd>best way to link javaScript file in head tag</dd>
+        <dt>console.dir(window.document);</dt>
+            <dd>to see file structure.</dd>
+        <dt>console.dir(document);</dt>
+            <dd>to see file structure in shortscript.</dd>
+    </dl>
+
+    <h4>Select any element</h4>
+    <pre>
+        const x = document.getElementById("heading1");
+        console.log(x); //to see data.
+    </pre>
+    <pre>
+        const x = document.getElementById("heading1");
+        console.dir(x); //to see data structure.
+    </pre>
+
+    <h4>Select element using query selector</h4>
+    <pre>
+        const x = document.querySelector("h1"); // it works like css selector
+        console.log(x);
+    </pre>
+    <pre>
+        const x = document.querySelector("#heading1"); // it works like css selector
+        console.log(x);
+    </pre>
+    <pre>
+        const paras = document.querySelectorAll("p"); // it selects multiple items and returns a node list
+        console.log(paras);
+    </pre>
+
+    <h4>textContent and innerText</h4>
+    <pre>
+        const heading = document.getElementById("heading1");
+        const content1 = heading.textContent
+        const content2 = heading.innerText
+        console.log(content1);
+        console.log(content2);        
+    </pre>
+
+    <h4>Change webPage elements</h4>
+    <pre>
+        const heading = document.getElementById("heading1");
+        heading.textContent = "This is something else";
+    </pre>
+</body>
+</html>
