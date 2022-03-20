@@ -84,5 +84,21 @@
         heading.style.textAlign = "center"; // use (textAlign) instead of (text-align)
     </pre>
 
+    <h4>getAttribute</h4>
+    <p>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</p>
+    <pre>
+        const data = document.querySelector("a");
+        console.log(data.getAttribute("href"));
+    </pre>
+
+    <h4>setAttribute</h4>
+    <p>&lt;a href="https://www.google.com"&gt;Google&lt;/a&gt;</p>
+    <pre>
+        const data = document.querySelector("a");
+        console.log(data.getAttribute("href"));
+        data.setAttribute("href", "https://facebook.com");
+        console.log(data.getAttribute("href"));
+    </pre>
+
 </body>
 </html>
