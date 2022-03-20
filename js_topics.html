@@ -24,12 +24,14 @@
         <dt>&lt;script src="./02.js" defer&gt;</script></dt>
             <dd>best way to link javaScript file in head tag</dd>
         <dt>console.dir(window.document);</dt>
-            <dd>to see file structure.</dd>
+            <dd>to see document structure.</dd>
         <dt>console.dir(document);</dt>
-            <dd>to see file structure in shortscript.</dd>
+            <dd>to see document structure in shortscript.</dd>
+        <dt>console.log(document);</dt>
+            <dd>to see document structure in shortscript.</dd>
     </dl>
 
-    <h4>Select any element</h4>
+    <h4>Select element getElementById</h4>
     <pre>
         const x = document.getElementById("heading1");
         console.log(x); //to see data.
@@ -54,18 +56,33 @@
     </pre>
 
     <h4>textContent and innerText</h4>
+    <p>&lt;h1 id="heading1"&gt;Hello &lt;span style="display: none;"&gt;world!&lt;/span&gt; &lt;/h1&gt;</p>
     <pre>
         const heading = document.getElementById("heading1");
-        const content1 = heading.textContent
-        const content2 = heading.innerText
+        const content1 = heading.textContent; //this will return inside and outside element
+        const content2 = heading.innerText; //this will return only outside element
         console.log(content1);
-        console.log(content2);        
+        console.log(content2);
     </pre>
 
-    <h4>Change webPage elements</h4>
+    <h4>Change element text</h4>
     <pre>
         const heading = document.getElementById("heading1");
+        console.log(heading.textContent);
         heading.textContent = "This is something else";
+        console.log(heading.textContent);
     </pre>
+
+    <h4>Change element style</h4>
+    <pre>
+        const heading = document.getElementById("heading1");
+        console.log(heading.style); //to see all properties of style
+    </pre>
+    <pre>
+        const heading = document.getElementById("heading1");
+        heading.style.color = "blue";
+        heading.style.textAlign = "center"; // use (textAlign) instead of (text-align)
+    </pre>
+
 </body>
 </html>
