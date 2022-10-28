@@ -10,23 +10,37 @@
 
     <h1>Audacity 3.2.1</h1>
     <pre>
-        <b>Import Audio</b>: Ctrl+Shift+I
-        <b>Select All</b>: Duble Click (Ctrl+A)
+        <b>Ctrl+Shift+I</b>: Import Audio
+        <b>Duble Click</b>: Select Full Track
         <b>Mute/Unmute</b>: Shift+U
-        <b>Pause/Play</b>: P
-        <b>Play/Stop</b>: Spacebar
+        <b>P</b>: Pause/Play
+        <b>Spacebar</b>: Play/Stop
+        <b>Ctrl+1</b>: ZoomIn
+        <b>Ctrl+3</b>: ZoomOut
+        <b>R</b>: Record
+        <b>Shift+R</b>: Record New Track
+        <b>Ctrl+X</b>: Cut
+        <b>Ctrl+C</b>: Copy
+        <b>Ctrl+V</b>: Paste
+        <b>Ctrl+Z</b>: Undo
+        <b>Ctrl+Shift+Z</b>: Redo
+        <b>Ctrl+I</b>: Split Clip
+        <b>Fit selection to width</b>: Ctrl+E
+        <b>Fit Project to width</b>: Ctrl+F
 
         <h2>Remove Noise</h2>
-        1: Effect/Noise Removal and Repair/Noise Reduction/Get Noise Profile
-        2: Select All, Ctrl+R (Effect/Repeat Noise Reduction)
+        1: Select some noisy part
+        2: Goto: /Effect/Noise Removal and Repair/Noise Reduction/Get Noise Profile
+        2: Select All, Ctrl+R (/Effect/Repeat Noise Reduction)
         
         <h2>Normalize</h2>
-        Effect/Volume and Compression/Normalize/:-
+        /Effect/Volume and Compression/Normalize/:-
             Remove DC offset [center on 0.0 vertically];
             Normalize peak amplitude to: -1.0 dB;
 
         <h2>Compression</h2>
-        Effect/Volume and Compression/Compressor/:-
+        1: Select All
+        2: Goto: /Effect/Volume and Compression/Compressor/:-
             Threshold: -7 dB;
             Noise Floor: -40 dB;
             Ratio: 3.5:1;
@@ -34,7 +48,33 @@
             Release Time: 1.0 secs;
             Make-up gain for 0 dB after compressing
 
+        <h2>Reverb</h2>
+        1: Select All
+        2: Goto: /Effect/Delay and Reverb/Reverb/:-
+            Room Size: 60 %;
+            Pre-delay: 10 ms;
+            Reverberance: 50 %;
+            Damping: 40 %;
+            Tone Low: 100 %;
+            Tone High: 100 %;
+            Wet Gain: -2 dB;
+            Dry Gain: -1 dB;
+            Stereo Width: 100 %;compressing
+
+        <h2>Graphic EQ</h2>
+        1: Select All
+        2: Goto: /Effect/EQ and Filters/Graphic EQ/:-
+            leftSide = Base
+            rightSide = Treblecompressing
+
+        <h2>Base and Treble</h2>
+        1: Select All
+        2: Goto: /Effect/EQ and Filters/Base and Treble/:-
+            Base: 3.0 dB;
+            Treble: 5.0 dB;
+            Volume: 2.0 dB;
     </pre>
+    <p><b>Export as WAV</b></p>
     
 </body>
 </html>
