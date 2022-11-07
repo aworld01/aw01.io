@@ -34,58 +34,27 @@
         1: Select some noisy part
         2: Goto: /Effect/Noise Removal and Repair/Noise Reduction/Get Noise Profile
         3: Select All, /Effect/Noise Removal and Repair/Noise Reduction/OK
-        
-        <h2>Normalize</h2>
-        /Effect/Volume and Compression/Normalize/:-
-            Remove DC offset [center on 0.0 vertically];
-            Normalize peak amplitude to: -1.0 dB;
+
+        <h2>Filter Curve EQ</h2>
+        1: Select All
+        2: Goto: /Effect/EQ and Filters/Filter Curve EQ/Presets & settings/Factory Presets/Bass Boost/Apply
+        3: Goto: /Effect/EQ and Filters/Filter Curve EQ/Presets & settings/Factory Presets/Treble Boost/Apply
 
         <h2>Compression</h2>
         1: Select All
         2: Goto: /Effect/Volume and Compression/Compressor/:-
-            Threshold: -7 dB;
+            Threshold: -12 dB;
             Noise Floor: -40 dB;
-            Ratio: 3.5:1;
-            Attack Time: 0.10 secs;
+            Ratio: 2:1;
+            Attack Time: 0.20 secs;
             Release Time: 1.0 secs;
             Make-up gain for 0 dB after compressing
-
-        <h2>Reverb</h2>
+        
+        <h2>Normalize</h2>
         1: Select All
-        2: Goto: /Effect/Delay and Reverb/Reverb/:-
-            Room Size: 60 %;
-            Pre-delay: 10 ms;
-            Reverberance: 50 %;
-            Damping: 40 %;
-            Tone Low: 100 %;
-            Tone High: 100 %;
-            Wet Gain: -2 dB;
-            Dry Gain: -1 dB;
-            Stereo Width: 100 %;compressing
-
-        <h2>Graphic EQ</h2>
-        1: Select All
-        2: Goto: /Effect/EQ and Filters/Graphic EQ/:-
-            leftSide = Base
-            rightSide = Treblecompressing
-
-        <h2>Filter Curve EQ</h2>
-        1: Select All
-        2: Goto: /Effect/EQ and Filters/Filter Curve EQ/:-
-            Set by your choice
-
-        <h2>Base and Treble</h2>
-        1: Select All
-        2: Goto: /Effect/EQ and Filters/Base and Treble/:-
-            Base: 0.0 dB;
-            Treble: 10.0 dB;
-            Volume: 0.0 dB;
-
-        <h2>Eco</h2>
-        1: Select All
-        2: Goto: /Effect/Delay and Reverb/Eco/:-
-            Delay time: 1 secs;
-            Decay factor: 0.06;
+        2: Goto: /Effect/Volume and Compression/Normalize/:-
+            Remove DC offset [center on 0.0 vertically];
+            Normalize peak amplitude to: -1.0 dB;
     </pre>
     <p><b>Export as WAV</b></p>
     
