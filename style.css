@@ -17,6 +17,7 @@ dl dt dd{
     text-indent: 55px;
 }
 .nav{
+    margin: 5px 5px;
     background: #1d4052;
     color: #fff;
     padding: 20px;
@@ -107,6 +108,45 @@ pre{
 }
 hr{
     margin-bottom: 10px;
+}
+
+
+
+
+
+
+@media (max-width: 500px){
+    .nav{
+        margin: 10 0;
+    }
+    .menuRight span{
+        display: block;
+        color: white;
+    }
+    .menuRight ul li{
+        display: block;
+        text-align: center;
+    }
+    .menuRight ul{
+        display: none;
+    }
+    .me .left{
+        float: none;
+        width: 100%;
+    }
+    .me .right{
+        width: 100%;
+        float: right;
+    }
+    .wrapper{
+        flex-direction: column;;
+    }
+    .wrapper .items{
+        min-height: auto;
+    }
+    .wrapper .left{
+        border: none;
+    }
 }
 
 
