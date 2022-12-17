@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1{
+            text-align: center;
+            color: white;
+            background: orange;
+        }
+    </style>
+    <title>Desktop Environment For Linux Applications</title>
+</head>
+<body>
+    <div id="container">
+        <h1>set Desktop environment for Linux applications</h1>
+        <h2>Add into startMenu</h2>
+        <p>1: Creating a file:-</p>
+        <p><b>sudo nano /usr/share/applications/blender.desktop</b></p>
+
+        <pre>
+[Desktop Entry]
+Type=Application
+Name=Blender-3.4
+Comment=Video Editing Software
+GenericName=Video Editor
+Exec=./blender
+Icon=/home/neo/myApps/blender-3.4.0-linux-x64/blender.svg
+Path=/home/neo/myApps/blender-3.4.0-linux-x64
+StartupNotify=False
+StartupWMClass=Code
+Categories=Utility;TextEditor;Development;IDE;
+        </pre>
+
+        <p><b>Ctrl+S</b>, <b>Ctrl+X</b></p>
+
+        <p><b>sudo chmod 775 /usr/share/applications/blender.desktop</b></p>
+        <hr>
+
+
+
+        <h2>Add to Desktop</h2>
+        <p>1: changing directory</p>
+        <p><b>cd Desktop</b></p>
+
+        <p>2: Creating a file:-</p>
+        <p><b>sudo nano /usr/share/applications/blender.desktop</b></p>
+
+        <pre>
+[Desktop Entry]
+Type=Application
+Name=Blender-3.4
+Comment=Video Editing Software
+GenericName=Video Editor
+Exec=./blender
+Icon=/home/neo/myApps/blender-3.4.0-linux-x64/blender.svg
+Path=/home/neo/myApps/blender-3.4.0-linux-x64
+StartupNotify=False
+StartupWMClass=Code
+Categories=Utility;TextEditor;Development;IDE;
+        </pre>
+
+        <p><b>Ctrl+S</b>, <b>Ctrl+X</b></p>
+        <hr>
+
+
+
+        <h2>Creating the command</h2>
+
+        <p>1: Creating a file:-</p>
+        <p><b>sudo nano /usr/bin/blender</b></p>
+
+        <pre>
+#!/bin/bash
+/home/neo/myApps/blender-3.4.0-linux-x64/blender
+        </pre>
+
+        <p><b>Ctrl+S</b>, <b>Ctrl+X</b></p>
+
+        <p><b>sudo chmod 775 /usr/bin/blender</b></p>
+        <hr>
+
+
+
+        <h2>Creating shortcut</h2>
+        <p><b>Start/Keyboard/Application Shortcuts/Add</b></p>
+
+        <pre>
+Command: blender
+Press keyboard keys to trigger the command 'blender'.
+        </pre>
+
+        <p><b>Ctrl+S</b>, <b>Ctrl+X</b></p>
+
+        <p><b>sudo chmod 775 /usr/bin/blender</b></p>
+    </div>
+</body>
+</html>
