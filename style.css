@@ -46,10 +46,10 @@ dl dt dd{
     color: white;
     text-decoration: none;
 }
-.nav a:hover{
+/* .nav a:hover{
     background-color: #111;
     border-radius: 10px;
-}
+} */
 .active{
     background-color: red;
 }
