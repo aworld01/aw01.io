@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>filePath</title>
+</head>
+<body>
+    <p>A file path descripbes the location of a file in a web site's folder structure.</p>
+    <p>File paths are used when linking to external file, like: </p>
+    <pre>
+        1: Web pages
+        2: Images
+        3: Style sheets
+        4: javaScripts
+    </pre>
+
+    <h2>Absolute File Paths</h2>
+    <p>An absolute file path is the full URL to a file:</p>
+    <pre>
+        img src="https://www.w3schools.com/images/picture.jpg" alt="Mountain"
+    </pre>
+<hr>
+
+    <h2>Relative File Paths</h2>
+    <p>A relative file path points to a file relative to the current page.</p>
+    <p>In the following example, the file path points to a file in the images folder located at the root of the current web:</p>
+    <pre>
+        img src="/images/picture.jpg" alt="Mountain"
+    </pre>
+<hr>
+
+    <p>In the following example, the file path points to a file in the images folder located in the current folder:</p>
+    <pre>
+        img src="images/picture.jpg" alt="Mountain"
+    </pre>
+<hr>
+
+<p>In the following example, the file path points to a file in the images folder located in the folder one level up from the current folder:</p>
+<pre>
+    img src="../images/picture.jpg" alt="Mountain"
+</pre>
+<hr>
+
+<h2>Best Practice</h2>
+<p>It's best practice to use relative file paths (if pssible).</p>
+<p>When using relative file paths, your web pages will not be bound to your current base URL. All links wll work on your own computer (localhost) as well as on your current public domain and your future public domains.
+</p>
+<hr>
+
+<table border="1px">
+    <tr>
+        <th>Path</th>
+        <th>Description</th>
+    </tr>
+    <tr>
+        <td>img src="picture.jpg"</td>
+        <td>The 'picture.jpg' file is located in the same folder as the currrent page.</td>
+    </tr>
+    <tr>
+        <td>img src="images/picture.jpg"</td>
+        <td>The 'picture.jpg' file is located in the images folder in the currrent page.</td>
+    </tr>
+    <tr>
+        <td>img src="/images/picture.jpg"</td>
+        <td>The 'picture.jpg' file is located in the images folder at the root of the currrent web.</td>
+    </tr>
+    <tr>
+        <td>img src="../picture.jpg"</td>
+        <td>The 'picture.jpg' file is located in the folder one level up from the current folder.</td>
+    </tr>
+</table>
+
+
+</body>
+</html>
