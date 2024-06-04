@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Countdown</title>
+    <style>
+        *{margin: 0; padding: 0;}
+        div{
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-image: linear-gradient(#00c3ff, #ffff1c);
+        }
+        p{
+            height: 100px;
+            width: 500px;
+            background-image: linear-gradient(#16bffd, #cb3066);
+            color: white;
+            line-height: 100px;
+            text-align: center;
+            font-size: 60px;
+            box-shadow: 1px 1px 0px #000,
+            2px 2px 0px #000,
+            3px 3px 0px #000,
+            4px 4px 0px #000,
+            5px 5px 0px #000
+            ;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>COUNTDOWN BEGINS</h1>
+        <p id="demo"></p>
+    </div>
+
+    <script>
+        // var pre = getTime(); /// jan 1 1970
+        var target = new Date("jul 15, 2024 07:00:00").getTime(); ///get date from "jan 1 1970"
+        var now = new Date().getTime(); ///current time
+        var diff = target - now;
+        var day = (diff / (1000));
+        /*
+        1 Hour = 60 Minuts
+        1 Minute = 60 Seconds
+        1 Second = 1000 miliseconds
+        1 Day = 24 hours
+        1 Day = 86,400
+
+        60*60*24 = 86,400
+
+        */
+    //    var days = diff/(1000*60*60*24);
+    //    console.log(days)
+
+    //    var days = Math.floor(diff/(1000*60*60*24));
+    //    console.log(days);
+    //    var hours = Math.floor(diff%(1000*60*60*24) / (1000*60*60));
+    //    console.log(hours);
+    //    var min = Math.floor(diff%(1000*60*60) / (1000*60));
+    //    console.log(min);
+    //    var sec = Math.floor(diff%(1000*60) / (1000));
+    //    console.log(sec);
+    
+        var x = function(){
+        var days = Math.floor(diff/(1000*60*60*24));
+        var hours = Math.floor(diff%(1000*60*60*24) / (1000*60*60));
+        var min = Math.floor(diff%(1000*60*60) / (1000*60));
+        var sec = Math.floor(diff%(1000*60) / (1000));
+        document.getElementById("demo").innerHTML = (days+"d,"+hours+"h,"+min+"m,"+sec+"s");
+    };
+
+    setInterval(x, 1000);
+
+    </script>
+</body>
+</html>
